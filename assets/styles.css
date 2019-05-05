@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+	width: 100%;
+    background-color: red;
+    height:50px;
+    width:100%;
+}
+nav img {
+    margin-left: 75px;
+}
+nav ul {
+    list-style-type: none;
+    margin-left: 75px;
+}
+nav ul li {
+    float: left;
+    padding: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color:white;
+}
+body {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
