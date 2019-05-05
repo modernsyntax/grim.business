@@ -28,5 +28,6 @@ nav a {
 	color: white;
 }
 html {
-    background: url(images/background.jpg) no-repeat top left fixed;
+    background: url(images/background.jpg) no-repeat top right fixed;
+    background-size: cover;
 }
