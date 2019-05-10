@@ -1,20 +1,19 @@
 function toggleFb() {
-    document.getElementById("fb-drawer").classList.toggle("nonactive")
-    document.getElementById("twtr-drawer").classList.contains("nonactive")
-    if ( !document.getElementById("twtr-drawer").classList.contains("nonactive")) {
-        document.getElementById("twtr-drawer").classList.toggle("nonactive")
-    }
-    else {
-        document.getElementById("twtr-drawer").classList.toggle("transdelay")
+    document.getElementById("twtr-drawer").style.transitionDelay = "0ms";
+    document.getElementById("fb-drawer").style.transitionDelay = "0ms";
+    document.getElementById("fb-drawer").classList.toggle("active")
+    if ( document.getElementById("twtr-drawer").classList.contains("active")) {
+        document.getElementById("twtr-drawer").classList.remove("active")
+        document.getElementById("fb-drawer").style.transitionDelay = "500ms";
     }
 }
+
 function toggleTw() {
-    document.getElementById("twtr-drawer").classList.toggle("nonactive")
-    document.getElementById("fb-drawer").classList.contains("nonactive")
-    if ( !document.getElementById("fb-drawer").classList.contains("nonactive")) {
-        document.getElementById("fb-drawer").classList.toggle("nonactive")
-    }
-    else {
-        document.getElementById("fb-drawer").classList.toggle("transdelay")
+    document.getElementById("fb-drawer").style.transitionDelay = "0ms";
+    document.getElementById("twtr-drawer").style.transitionDelay = "0ms";
+    document.getElementById("twtr-drawer").classList.toggle("active")
+    if ( document.getElementById("fb-drawer").classList.contains("active")) {
+        document.getElementById("fb-drawer").classList.remove("active")
+        document.getElementById("twtr-drawer").style.transitionDelay = "500ms";
     }
 }
