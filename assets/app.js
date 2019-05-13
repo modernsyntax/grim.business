@@ -1,3 +1,7 @@
+function mobileMenu() {
+    document.getElementById("mobile-nav").classList.toggle("active");
+}
+
 function toggleFb() {
     document.getElementById("twtr-drawer").style.transitionDelay = "0ms";
     document.getElementById("fb-drawer").style.transitionDelay = "0ms";
@@ -33,6 +37,4 @@ function colorTw() {
 function decolorTw() {
     document.getElementById("twittericon").setAttribute("src" , "assets/images/twitter.png")
 }
-function mobileMenu() {
-    
-}
+
