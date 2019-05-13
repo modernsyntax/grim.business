@@ -1,3 +1,18 @@
+@font-face {
+	font-family: BebasNeue;
+
+	src: local(BebasNeue),
+	local('../assets/fonts/BebasNeue-Regular'),
+	url('../assets/fonts/BebasNeue-Regular.ttf') format('truetype'),
+	url('../assets/fonts/BebasNeue-Regular.svg#font') format('svg');
+}
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	background: url('images/background.jpg') no-repeat top right fixed;
+	background-size: cover;
+}
+
 #fb-drawer,#twtr-drawer {
 	position: fixed;
 	z-index: 1001;
@@ -17,6 +32,11 @@
 	position: fixed;
 	top: 0;
 	right: -1px;
+}
+#hamburger {
+	position: fixed;
+	top: 0;
+	right: -10px;
 }
 #twittericon {
 	position: fixed;
@@ -41,8 +61,8 @@
 	        box-shadow: 1px 1px 5px 1px #555;
 }
 
-.main-container {
-	width: 55%;
+main {
+	width: 75%;
 	margin: 80px auto;
 }
 
@@ -63,14 +83,6 @@
 	cursor: pointer;
 }
 
-@font-face {
-	font-family: BebasNeue;
-
-	src: local(BebasNeue),
-	local('../assets/fonts/BebasNeue-Regular'),
-	url('../assets/fonts/BebasNeue-Regular.ttf') format('truetype'),
-	url('../assets/fonts/BebasNeue-Regular.svg#font') format('svg');
-}
 
 article img,video {
 	width: 100%;
@@ -102,16 +114,11 @@ h1,h2,h3,h4,h5,h6 {
 	margin-bottom: 15px;
 }
 
-html {
-	font-family: Arial, Helvetica, sans-serif;
-	background: url(images/background.jpg) no-repeat top right fixed;
-	background-size: cover;
-}
 
 nav {
 	position: fixed;
-	top:0;
 	z-index: 1000;
+	top: 0;
 	width: 100%;
 	background-color: red;
 	-webkit-box-shadow: 1px 1px 5px 1px #555;
@@ -123,7 +130,7 @@ nav img {
 	float: left;
 	height: 40px;
 	margin: 0 75px;
-	padding-top: 5px;
+	padding: 5px 0;
 }
 
 nav li a {
@@ -134,15 +141,14 @@ nav li a {
 }
 
 nav li a.active {
-	background-color: rgba(255, 50, 50, 0.95);
 	padding-bottom: 11.25px;
 	border-bottom: 1.75px solid #fff;
+	background-color: rgba(255, 50, 50, .95);
 }
 figcaption {
 	font-size: .75em;
 }
 nav li a:hover {
-	background-color: rgba(255, 50, 50, 0.95);
 	padding-bottom: 11.25px;
 	border-bottom: 1.75px solid #fff;
 }
@@ -162,9 +168,45 @@ nav ul li {
 
 section {
 	display: grid;
+
 	grid-column-gap: 5%;
 	grid-template-columns: 60% 35%;
 }
-figure, video{
-	padding-bottom:5%;
+figure {
+	padding-bottom: 5%;
+}
+
+.mobile {
+	display: none;
+}
+/*tablet code starts here */
+@media only screen and (max-width: 1240px) {
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+	main {
+		width: 90%;
+		margin: 50px auto;
+	}
+	section {
+		grid-template-columns: 100%;
+	}
+	nav img {
+		margin: 0 30px;
+	}
+}
+/*mobile code starts here */
+@media only screen and (max-width: 600px) {
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+	main {
+		width: 100%;
+	}
 }
