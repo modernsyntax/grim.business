@@ -5,6 +5,13 @@
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<meta content="Brion Lund" name="author">
+	<meta content=
+	"This is a website for the Electronic Punk band GRIM BZNS. Beware: those who enter risk falling in love with something that may cause parental abandonment."
+	name="description">
+	<meta content=
+	"based, punk, electropunk, electro-punk, electro, electro/punk, nintendocore, nintendo, nintendo-core, screamo, san jose, Die Antwoord, Deadmau5, Phantagram, Black Mill, Crystal Castles, grm, zebra-mountain, bzness, volly-volatile, jamey-blaze, jamey-jean-blaze, grim-gritness, grim, jamie-blaze, grim-bizness-band, Brion Lund, brion-bot, brionbot, brion, lund"
+	name="keywords">
 	<link href="assets/styles.css" rel="stylesheet" type="text/css">
 	<link href="favicon.ico" rel="icon" type="image/x-icon">
 
@@ -36,43 +43,46 @@
 					<a href="contact.html">Contact</a>
 				</li>
 			</ul>
-			<div class="desktop">
-			<img alt="facebook icon" class="pointer" id="facebookicon" onclick="toggleFb()" onmouseout=
-			"decolorFb()" onmouseover="colorFb()" src="assets/images/facebook.png"> 
-			<img alt="twitter icon"
-			class="pointer" id="twittericon" onclick="toggleTw()" onmouseout="decolorTw()" onmouseover=
-			"colorTw()" src="assets/images/twitter.png">
+
+
+			<div class="desktop"><img alt="facebook icon" class="pointer" id="facebookicon" onclick=
+			"toggleFb()" onmouseout="decolorFb()" onmouseover="colorFb()" src="assets/images/facebook.png">
+			<img alt="twitter icon" class="pointer" id="twittericon" onclick="toggleTw()" onmouseout=
+			"decolorTw()" onmouseover="colorTw()" src="assets/images/twitter.png"></div>
+
+
+			<div class="mobile"><img alt="hamburger menu" class="pointer" id="hamburger" onclick=
+			"mobileMenu()" src="assets/images/hamburger.png">
 			</div>
-<div class="mobile">
-		<img alt="hamburger menu" class="pointer" id="hamburger" onclick="mobileMenu()" src="assets/images/hamburger.png" >
-		
-</div>
 		</nav>
 	</header>
-<div id="mobile-nav">
-		<ul>
-				<li>
-						<a href="/music.html">Music</a>
-					</li>
-	
-	
-					<li>
-						<a href="/videos">Videos</a>
-					</li>
-	
-	
-					<li>
-						<a href="/art.html">Art</a>
-					</li>
-	
-	
-					<li>
-						<a href="/contact.html">Contact</a>
-					</li>
-		</ul>
-</div>
 
-	<div id="fb-drawer" class="desktop">
+
+	<div id="mobile-nav">
+		<ul>
+			<li>
+				<a href="/music.html">Music</a>
+			</li>
+
+
+			<li>
+				<a href="/videos.html">Videos</a>
+			</li>
+
+
+			<li>
+				<a href="/art.html">Art</a>
+			</li>
+
+
+			<li>
+				<a href="/contact.html">Contact</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="desktop" id="fb-drawer">
 		<div class="mininav"><img alt="brand-logo white" src="assets/images/VantanaRow.png" style=
 		"padding-right:34px;"> <img alt="facebook icon active" class="pointer" onclick="toggleFb()" src=
 		"assets/images/fbcolor.png"> <img alt="twitter icon" class="pointer" onclick="toggleTw()" src=
@@ -89,7 +99,7 @@
 	</div>
 
 
-	<div id="twtr-drawer" class="desktop">
+	<div class="desktop" id="twtr-drawer">
 		<div class="mininav"><img alt="vantanarow icon" src="assets/images/VantanaRow.png" style=
 		"padding-right:34px;"> <img alt="facebook icon" class="pointer" onclick="toggleFb()" src=
 		"assets/images/facebook.png"> <img alt="twitter icon active" class="pointer" onclick="toggleTw()"
