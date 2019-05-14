@@ -123,11 +123,16 @@ nav li a.active {
 }
 #mobile-nav ul {
 	list-style-type: none;
-	font-family: BebasNeue;
+	font: 20pt BebasNeue;
+	text-align: left;
+}
+#mobile-nav li {
+	padding: 10px 0;
 }
 #mobile-nav li a {
 	text-decoration: none;
 	color:red;
+	padding: 10px 100% 10px 35px;
 }
 #mobile-nav li a:hover {
 	color: white;
