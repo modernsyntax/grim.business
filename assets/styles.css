@@ -1,5 +1,6 @@
 @font-face {
 	font-family: BebasNeue;
+
 	src: local('BebasNeue'),
 	local('../assets/fonts/BebasNeue-Regular'),
 	url('../assets/fonts/BebasNeue-Regular.ttf') format('truetype'),
@@ -9,12 +10,13 @@
 * {
 	margin: 0;
 	padding: 0;
+	color: #333;
 }
 h1,h2,h3,h4,h5,h6 {
-	margin-bottom: 15px;
 	font-family: BebasNeue;
-	letter-spacing: .1em;
 	font-weight: normal;
+	margin-bottom: 15px;
+	letter-spacing: .1em;
 }
 html {
 	font-family: Arial, Helvetica, sans-serif;
@@ -29,7 +31,7 @@ nav {
 	width: 100%;
 	background-image: linear-gradient(
 	to bottom,
-	#ff0000, #cc0000
+	#f00, #c00
 	);
 	-webkit-box-shadow: 1px 1px 5px 1px #555;
 	   -moz-box-shadow: 1px 1px 5px 1px #555;
@@ -42,6 +44,7 @@ nav img {
 	margin: 0 75px;
 	padding: 5px 0;
 }
+
 nav ul {
 	overflow: hidden;
 	margin: 0 0 0 25px;
@@ -59,7 +62,7 @@ nav li a {
 	text-decoration: none;
 	color: #fff;
 }
-nav li a:hover {
+nav li a:hover{
 	padding-bottom: 11.25px;
 	border-bottom: 1.75px solid #fff;
 }
@@ -97,7 +100,7 @@ nav li a.active {
 	z-index: 1001;
 	top: 0;
 	right: -350px;
-	width:325px;
+	width: 325px;
 	height: 100vh;
 	transition: all 375ms ease-in;
 	text-align: center;
@@ -166,13 +169,18 @@ section {
 	grid-template-columns: 60% 35%;
 }
 article img,video {
-	width: 100%;
+	max-width: 100%;
+}
+article a {
+	text-decoration: none;
 }
 figure {
 	padding-bottom: 5%;
+	color: #333;
 }
 figcaption {
-	font-size: .75em;
+	font-family: BebasNeue;
+	font-size: 1em;
 }
 footer {
 	position: fixed;
@@ -199,6 +207,51 @@ footer img {
 .mobile {
 	display: none;
 }
+form {
+	width: 100%;
+}
+input {
+	display: block;
+	margin: 5px;
+}
+textarea {
+	width: 95%;
+	min-height: 150px;
+	max-height: 300px;
+	resize: vertical;
+}
+input:focus,textarea:focus {
+	border: 3px solid red;
+	border-radius: 25px;
+}
+input,textarea {
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 5px 10px;
+	border: 3px solid #ccc;
+	border-radius: 25px;
+	outline: none;
+}
+
+[type=submit],[type=reset] {
+	font-family: BebasNeue;
+	font-size: 1em;
+	display: inline;
+	width: 100px;
+	padding: 0, 20px;
+	cursor: pointer;
+	color: white;
+	border: none;
+	background-color: red;
+}
+[name=Phone-Number] {
+	width: 90%;
+}
+[name=First-Name],[name=Last-Name],[name=Email] {
+	width: 40.5%;
+}
+[name=First-Name],[name=Last-Name] {
+	display: inline;
+}
 /*tablet code starts here */
 @media only screen and (max-width: 1240px) {
 	.desktop {
@@ -212,8 +265,9 @@ footer img {
 		margin: 50px auto;
 	}
 	section {
-		grid-template-columns: 100%;
+		grid-template-columns: 100% ;
 	}
+
 	nav img {
 		margin: 0 30px;
 	}

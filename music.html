@@ -5,6 +5,13 @@
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<meta content="Brion Lund" name="author">
+	<meta content=
+	"This is a website for the Electronic Punk band GRIM BZNS. Beware: those who enter risk falling in love with something that may cause parental abandonment."
+	name="description">
+	<meta content=
+	"based, punk, electropunk, electro-punk, electro, electro/punk, nintendocore, nintendo, nintendo-core, screamo, san jose, Die Antwoord, Deadmau5, Phantagram, Black Mill, Crystal Castles, grm, zebra-mountain, bzness, volly-volatile, jamey-blaze, jamey-jean-blaze, grim-gritness, grim, jamie-blaze, grim-bizness-band, Brion Lund, brion-bot, brionbot, brion, lund"
+	name="keywords">
 	<link href="assets/styles.css" rel="stylesheet" type="text/css">
 	<link href="favicon.ico" rel="icon" type="image/x-icon">
 
@@ -14,7 +21,7 @@
 <body>
 	<header>
 		<nav>
-			<a href="/"><img alt="brand-logo" src="assets/images/logo.png"></a>
+			<a href="/"><img alt="GRIM BZNS Band Logo" src="assets/images/logo.png"></a>
 
 			<ul class="desktop">
 				<li>
@@ -23,7 +30,7 @@
 
 
 				<li>
-					<a href="videos">Videos</a>
+					<a href="videos.html">Videos</a>
 				</li>
 
 
@@ -36,46 +43,51 @@
 					<a href="contact.html">Contact</a>
 				</li>
 			</ul>
-			<div class="desktop">
-			<img alt="facebook icon" class="pointer" id="facebookicon" onclick="toggleFb()" onmouseout=
-			"decolorFb()" onmouseover="colorFb()" src="assets/images/facebook.png"> 
-			<img alt="twitter icon"
-			class="pointer" id="twittericon" onclick="toggleTw()" onmouseout="decolorTw()" onmouseover=
-			"colorTw()" src="assets/images/twitter.png">
+
+
+			<div class="desktop"><img alt="GRIM BZNS Band Social Media Icon Facebook" class="pointer" id=
+			"facebookicon" onclick="toggleFb()" onmouseout="decolorFb()" onmouseover="colorFb()" src=
+			"assets/images/facebook.png"> <img alt="GRIM BZNS Band Social Media Icon twitter" class=
+			"pointer" id="twittericon" onclick="toggleTw()" onmouseout="decolorTw()" onmouseover="colorTw()"
+			src="assets/images/twitter.png"></div>
+
+
+			<div class="mobile"><img alt="navigation menu button" class="pointer" id="hamburger" onclick=
+			"mobileMenu()" src="assets/images/hamburger.png">
 			</div>
-<div class="mobile">
-		<img alt="hamburger menu" class="pointer" id="hamburger" onclick="mobileMenu()" src="assets/images/hamburger.png" >
-		
-</div>
 		</nav>
 	</header>
-<div id="mobile-nav">
-		<ul>
-				<li>
-						<a href="/music.html">Music</a>
-					</li>
-	
-	
-					<li>
-						<a href="/videos">Videos</a>
-					</li>
-	
-	
-					<li>
-						<a href="/art.html">Art</a>
-					</li>
-	
-	
-					<li>
-						<a href="/contact.html">Contact</a>
-					</li>
-		</ul>
-</div>
 
-	<div id="fb-drawer" class="desktop">
-		<div class="mininav"><img alt="brand-logo white" src="assets/images/VantanaRow.png" style=
-		"padding-right:34px;"> <img alt="facebook icon active" class="pointer" onclick="toggleFb()" src=
-		"assets/images/fbcolor.png"> <img alt="twitter icon" class="pointer" onclick="toggleTw()" src=
+
+	<div id="mobile-nav">
+		<ul>
+			<li>
+				<a href="/music.html">Music</a>
+			</li>
+
+
+			<li>
+				<a href="/videos.html">Videos</a>
+			</li>
+
+
+			<li>
+				<a href="/art.html">Art</a>
+			</li>
+
+
+			<li>
+				<a href="/contact.html">Contact</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="desktop" id="fb-drawer">
+		<div class="mininav"><img alt="GRIM BZNS Band logo" src="assets/images/VantanaRow.png" style=
+		"padding-right:34px;"> <img alt="GRIM BZNS Band Social Media Icon Facebook Color" class="pointer"
+		onclick="toggleFb()" src="assets/images/fbcolor.png"> <img alt=
+		"GRIM BZNS Band Social Media Icon Twitter Color" class="pointer" onclick="toggleTw()" src=
 		"assets/images/twitter.png"></div>
 
 
@@ -89,11 +101,12 @@
 	</div>
 
 
-	<div id="twtr-drawer" class="desktop">
-		<div class="mininav"><img alt="vantanarow icon" src="assets/images/VantanaRow.png" style=
-		"padding-right:34px;"> <img alt="facebook icon" class="pointer" onclick="toggleFb()" src=
-		"assets/images/facebook.png"> <img alt="twitter icon active" class="pointer" onclick="toggleTw()"
-		src="assets/images/twcolor.png"></div>
+	<div class="desktop" id="twtr-drawer">
+		<div class="mininav"><img alt="Vantana Row Band Logo" src="assets/images/VantanaRow.png" style=
+		"padding-right:34px;"> <img alt="GRIM BZNS Band Social Media Icon Facebook" class="pointer"
+		onclick="toggleFb()" src="assets/images/facebook.png"> <img alt=
+		"GRIM BZNS Band Social Media Icon Twitter Color" class="pointer" onclick="toggleTw()" src=
+		"assets/images/twcolor.png"></div>
 		<a class="twitter-timeline" data-link-color="#ff0000" data-theme="light" href=
 		"https://twitter.com/vantanarow?ref_src=twsrc%5Etfw"></a> 
 		<script async charset="utf-8" src="https://platform.twitter.com/widgets.js">
@@ -104,69 +117,47 @@
 	<main>
 		<section class="content">
 			<article>
-				<figure>
-					<h2>GRIM BZNS: A Documentary</h2>
-					<video controls="" poster="assets/images/documentary.jpg"><source src=
-					"https://vwebtech.tmcc.edu/courses/CIT-151-3001/brion_lund/videos/documentary.mp4" type=
-					"video/mp4">Your browser does not support the video tag.</video>
-				</figure>
-
-
-				<figure>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In explicabo inventore sunt? Vel
-					nisi impedit, rerum sed incidunt placeat repellendus eos unde sapiente exercitationem aliquam
-					eaque ipsam ratione dolorem error. Nobis iste sunt neque recusandae fuga fugit hic aliquid
-					optio quaerat laborum, nulla tempora magnam ipsa quisquam enim deserunt, sint placeat dicta
-					praesentium veniam maiores distinctio molestiae? Quaerat, nostrum officia. Distinctio deserunt
-					asperiores ipsam pariatur earum optio illo inventore obcaecati aliquid repudiandae autem,
-					consequatur odio assumenda beatae repellendus porro. Repellendus iure perferendis molestiae
-					officiis asperiores eligendi illum aspernatur nemo et. Nostrum minus quisquam enim quis, dolor
-					exercitationem minima numquam ipsum ut, consequuntur adipisci recusandae. Quam inventore id,
-					voluptatem nesciunt blanditiis nam? Necessitatibus eos facilis molestias ullam omnis fuga
-					minus nam? Cum velit cupiditate consequuntur fuga earum labore maiores deleniti odio error,
-					quasi unde cumque illo neque voluptatum aliquam perspiciatis quibusdam dolore temporibus
-					doloribus non eius? Iusto molestias quam perspiciatis. Id. Veritatis quo repudiandae
-					reprehenderit? A dolorum maxime possimus eius facere excepturi architecto. Perferendis placeat
-					nesciunt vero sed aliquid ad, eum non beatae officia! Ratione doloribus ut, iure iusto itaque
-					nisi? Dolores nostrum tempora harum unde atque provident consequatur nam in laborum! Est eos,
-					qui non laboriosam accusamus iusto tempora rerum totam corrupti ducimus esse dicta architecto.
-					Iste dolorum numquam voluptatibus. Aliquid doloribus in exercitationem nulla deleniti
-					reiciendis, earum quos culpa suscipit doloremque corporis quae labore commodi provident vel
-					animi temporibus repudiandae! Accusamus dicta placeat expedita nulla tempore aspernatur
-					veritatis cum. Sunt ullam atque excepturi eum aliquid facilis amet, molestiae vel expedita
-					laudantium inventore ipsum libero dolor sapiente officiis natus, dolorem beatae debitis ipsa
-					sint praesentium cupiditate, numquam alias quidem. Est. Omnis eos, ad ex aperiam illum aliquid
-					assumenda recusandae quis ea at quas id quia perferendis quisquam libero provident quae
-					asperiores debitis deserunt reprehenderit sint voluptates. Itaque cumque repellendus
-					earum.</p>
-				</figure>
-			</article>
-
-
-			<article class="desktop">
 				<h4>Latest Releases</h4>
-				<a href="https://open.spotify.com/album/6EmxDxOyvLJTkzvgC2ux6X" target="_blank">
 				<figure>
-					<img alt="All I want for BZNS... Album Cover" src="assets/images/alliwantforbzns.jpg">
-
+						<a href="https://open.spotify.com/album/6EmxDxOyvLJTkzvgC2ux6X" target="_blank">
+					<img alt="All I want for BZNS... GRIM BZNS BAND Album Cover" src=
+					"assets/images/alliwantforbzns.jpg"></a>
 					<figcaption>
-						All I Want for BZNS... - 2015
-					</figcaption>
-				</figure></a> <a href="https://open.spotify.com/album/5SK95faECc9HAOjjX616i5" target="_blank">
+							All I Want for BZNS... - 2015
+						</figcaption>
+					<audio controls>
+							<source src="assets/audio/i_want_mdonalds.mp3" type="audio/mpeg">
+								What are you browsing the internet on a toaster? A song was supposed to be here. Upgrade your browser man.
+							</audio>
+
+					</figure>
+					<figure>
+							<a href="https://open.spotify.com/album/5SK95faECc9HAOjjX616i5" target="_blank">
+						<img alt="Satan GRIM BZNS Band Album Cover" src="assets/images/satan.jpg">
+					</a>
+					<figcaption>
+							Satan - 2012
+						</figcaption>
+					<audio controls>
+							<source src="assets/audio/gifted_shiny_beings.mp3" type="audio/mpeg">
+								What are you browsing the internet on a toaster? A song was supposed to be here. Upgrade your browser man.
+							</audio>
+					
+				</figure>
 				<figure>
-					<img alt="Satan Album Cover" src="assets/images/satan.jpg">
-
-					<figcaption>
-						Satan - 2012
-					</figcaption>
-				</figure></a> <a href="https://open.spotify.com/album/1riCb9YcSrOz4Jh0uEedNR" target="_blank">
-				<figure>
-					<img alt="Self Titled Album Cover" src="assets/images/selftitled.jpg">
-
-					<figcaption>
+				<a href="https://open.spotify.com/album/1riCb9YcSrOz4Jh0uEedNR" target="_blank">
+				
+					<img alt="Self Titled GRIM BZNS Band Album Cover" src="assets/images/selftitled.jpg">
+				</a>
+				<figcaption>
 						GRIM BZNS - 2012
 					</figcaption>
-				</figure></a>
+				<audio controls>
+						<source src="assets/audio/box_of_red_lemons.mp3" type="audio/mpeg">
+							What are you browsing the internet on a toaster? A song was supposed to be here. Upgrade your browser man.
+						</audio>
+					
+				</figure>
 			</article>
 		</section>
 	</main>
@@ -175,7 +166,7 @@
 	<footer>
 		<div id="contact">
 			Contact Webmaster: <a href="mailto:brion@modernsyntax.io" target="_blank"><img alt=
-			"webmaster icon" src="assets/images/msicon.png"></a>
+			"Modern Syntax Logo" src="assets/images/msicon.png"></a>
 		</div>
 	</footer>
 	<!--my javascript-->

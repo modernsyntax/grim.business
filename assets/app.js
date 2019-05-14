@@ -37,4 +37,3 @@ function colorTw() {
 function decolorTw() {
     document.getElementById("twittericon").setAttribute("src" , "assets/images/twitter.png")
 }
-
