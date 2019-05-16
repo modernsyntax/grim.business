@@ -33,9 +33,7 @@ nav {
 	to bottom,
 	#f00, #c00
 	);
-	-webkit-box-shadow: 1px 1px 5px 1px #555;
-	   -moz-box-shadow: 1px 1px 5px 1px #555;
-	        box-shadow: 1px 1px 5px 1px #555;
+	box-shadow: 1px 1px 5px 1px #555;
 }
 
 nav img {
@@ -62,14 +60,9 @@ nav li a {
 	text-decoration: none;
 	color: #fff;
 }
-nav li a:hover{
+nav li a:hover {
 	padding-bottom: 11.25px;
 	border-bottom: 1.75px solid #fff;
-}
-nav li a.active {
-	padding-bottom: 11.25px;
-	border-bottom: 1.75px solid #fff;
-	background-color: rgba(255, 50, 50, .95);
 }
 .pointer:hover {
 	cursor: pointer;
@@ -105,9 +98,7 @@ nav li a.active {
 	transition: all 375ms ease-in;
 	text-align: center;
 	background-color: #fff;
-	-webkit-box-shadow: 1px 1px 5px 1px #555;
-	   -moz-box-shadow: 1px 1px 5px 1px #555;
-	        box-shadow: 1px 1px 5px 1px #555;
+	box-shadow: 1px 1px 5px 1px #555;
 }
 
 #hamburger {
@@ -125,9 +116,7 @@ nav li a.active {
 	transition: all 375ms ease-in;
 	text-align: center;
 	background-color: #fff;
-	-webkit-box-shadow: 1px 1px 5px 1px #555;
-	   -moz-box-shadow: 1px 1px 5px 1px #555;
-	        box-shadow: 1px 1px 5px 1px #555;
+	box-shadow: 1px 1px 5px 1px #555;
 }
 #mobile-nav ul {
 	font: 2em BebasNeue;
@@ -158,9 +147,7 @@ main {
 .content {
 	padding: 5%;
 	background-color: rgba(255,255,255,.9);
-	-webkit-box-shadow: 1px 1px 5px 1px #555;
-	   -moz-box-shadow: 1px 1px 5px 1px #555;
-	        box-shadow: 1px 1px 5px 1px #555;
+	box-shadow: 1px 1px 5px 1px #555;
 }
 section {
 	display: grid;
@@ -188,9 +175,7 @@ footer {
 	left: 0;
 	border-radius: 0 15px 0 0;
 	background-color: #fff;
-	-webkit-box-shadow: 1px 1px 5px 1px #555;
-	   -moz-box-shadow: 1px 1px 5px 1px #555;
-	        box-shadow: 1px 1px 5px 1px #555;
+	box-shadow: 1px 1px 5px 1px #555;
 }
 
 footer #contact {
@@ -232,12 +217,12 @@ input,textarea {
 	outline: none;
 }
 
-[type=submit],[type=reset] {
+[type=submit], [type=reset] {
 	font-family: BebasNeue;
 	font-size: 1em;
 	display: inline;
 	width: 100px;
-	padding: 0, 20px;
+	padding: 5px 20px;
 	cursor: pointer;
 	color: white;
 	border: none;
@@ -251,6 +236,25 @@ input,textarea {
 }
 [name=First-Name],[name=Last-Name] {
 	display: inline;
+}
+table {
+	border-collapse: collapse;
+	
+}
+th, td{
+	text-align:center;
+	padding:10px;
+	width: 4000px;
+	border:1px solid #333;
+	background-color: white;
+
+}
+th {
+	background-color: #333;
+	color:white;
+}
+iframe {
+	width:100%;
 }
 /*tablet code starts here */
 @media only screen and (max-width: 1240px) {
